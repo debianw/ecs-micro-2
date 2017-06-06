@@ -10,9 +10,9 @@ app.get('/', (req, res) => {
   });
 });
 
-app.get('/micro-2/test', (req, res) => {
+app.get('/micro-2', (req, res) => {
   res.json({ 
-    micro: 'micro-2/test',
+    micro: '/micro-2/*',
     hostname: os.hostname()
   });
 });
