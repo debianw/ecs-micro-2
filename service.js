@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 const port = 9000;
 
-app.get('/', (req, res) => {
+app.get('/micro-2/test', (req, res) => {
   res.json({ 
     instance: 'hello micro-2 , waly, test #1',
     hostname: os.hostname()
